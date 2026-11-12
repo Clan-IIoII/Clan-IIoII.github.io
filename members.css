@@ -1,0 +1,124 @@
+.search-bar {
+    max-width: 460px;
+    margin: 0 auto 30px;
+}
+
+    .search-bar input {
+        width: 100%;
+        padding: 13px 18px;
+        border-radius: 10px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        color: var(--text);
+        font-size: 0.95rem;
+        outline: none;
+        transition: 0.25s;
+    }
+
+        .search-bar input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+        }
+
+/* Участники в столбик */
+.members-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.member-item {
+    background: var(--card);
+    border: 1px solid rgba(168, 85, 247, 0.55);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.15);
+    padding: 14px 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.2s;
+    word-break: break-word;
+}
+
+    .member-item:hover {
+        background: var(--card-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 0 16px rgba(168, 85, 247, 0.3);
+    }
+
+.member-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+    box-shadow: 0 0 8px var(--accent);
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.member-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.member-role {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Цветные рамки по ролям ===== */
+
+/* OWNER — золотая рамка */
+.member-item.role-owner {
+    border-color: #f5c518;
+    box-shadow: 0 0 12px rgba(245, 197, 24, 0.35);
+}
+
+    .member-item.role-owner .member-dot {
+        background: #f5c518;
+        box-shadow: 0 0 10px #f5c518;
+    }
+
+    .member-item.role-owner .member-role {
+        color: #f5c518;
+    }
+
+/* ADMIN — красная рамка */
+.member-item.role-admin {
+    border-color: #ef4444;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.35);
+}
+
+    .member-item.role-admin .member-dot {
+        background: #ef4444;
+        box-shadow: 0 0 10px #ef4444;
+    }
+
+    .member-item.role-admin .member-role {
+        color: #ef4444;
+    }
+
+/* ML.ADMIN — синяя рамка */
+.member-item.role-mladmin {
+    border-color: #3b82f6;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.35);
+}
+
+    .member-item.role-mladmin .member-dot {
+        background: #3b82f6;
+        box-shadow: 0 0 10px #3b82f6;
+    }
+
+    .member-item.role-mladmin .member-role {
+        color: #3b82f6;
+    }

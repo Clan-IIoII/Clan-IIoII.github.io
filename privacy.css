@@ -1,0 +1,35 @@
+.privacy-content {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 36px;
+}
+
+    .privacy-content h3 {
+        color: var(--accent);
+        margin: 24px 0 10px;
+        font-size: 1.15rem;
+    }
+
+        .privacy-content h3:first-child {
+            margin-top: 0;
+        }
+
+    .privacy-content p, .privacy-content li {
+        color: var(--text-dim);
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .privacy-content ul {
+        padding-left: 20px;
+        margin-bottom: 14px;
+    }
+
+@media (max-width: 480px) {
+    .privacy-content {
+        padding: 22px 18px;
+    }
+}

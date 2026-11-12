@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список участников — ✟IIoII✟</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="members.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                ✟<span>IIoII</span>✟ <span class="logo-tag">ddnet</span>
+            </a>
+
+            <div class="nav" id="mainNav">
+                <a href="index.html">Главная</a>
+                <a href="requirements.html">Анкета для вступления</a>
+                <a href="members.html" class="active">Список участников</a>
+                <a href="team.html">Союзы клана</a>
+                <a href="rules.html">Правила клана</a>
+            </div>
+
+            <a href="https://t.me" target="_blank" class="btn btn-primary btn-sm header-cta">Вступить</a>
+
+            <button class="burger" id="burgerBtn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="page-body">
+        <div class="section section-dark" style="border-top: none;">
+            <div class="container">
+                <div class="section-head">
+                    <div class="hero-badge">Состав</div>
+                    <h1>Список участников</h1>
+                    <p>Актуальный состав игроков клана ✟IIoII✟</p>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" id="memberSearch" placeholder="Поиск игрока по нику..." oninput="filterMembers()">
+                </div>
+
+                <div class="members-grid" id="membersList"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="requirements.html">Анкета</a>
+                <a href="members.html">Участники</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-meta">
+                <span>site by: @pamiaqww</span>
+                <span>© 2026 ✟IIoII✟ Все права защищены</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.form-box {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 34px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.req-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 24px 0 30px;
+}
+
+    .req-list li {
+        background: var(--bg-alt);
+        border: 1px solid var(--border);
+        padding: 14px 18px;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 0.98rem;
+    }
+
+.req-num {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.admins-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.admin-card {
+    background: var(--bg-alt);
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.25s;
+}
+
+    .admin-card:hover {
+        background: rgba(168, 85, 247, 0.12);
+        border-color: var(--accent);
+        transform: translateY(-2px);
+    }
+
+.admin-role {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+}
+
+.admin-nick {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 480px) {
+    .form-box {
+        padding: 22px 18px;
+    }
+}
